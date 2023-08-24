@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Swash&display=swap');
+
+.main {
+  width: 100vw;
+  height: 75vh;
+  background-color: rgba(0,0,0,0.95);
+}
+
+.main-content {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 150px 0 0 100px;
+  animation-name: fade;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+.main-name {
+  font-size: 50px;
+  font-family: 'MS Pゴシック','sans-serif';
+  letter-spacing: 11px;
+}
+
+.main-right {
+  padding: 100px 100px 0 0;
+}
+
+.main-right h1 {
+  font-size: 30px;
+  letter-spacing: 5px;
+}
+
+.main-menu {
+  padding-top: 150px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes fade{
+0%{
+  opacity: 0;
+}
+100%{
+  opacity: 1;
+}
+}

@@ -1,0 +1,18 @@
+  <%# CSS・・・assets/stylesheets/shared/header.css %>
+<header class= 'top-page-header'>
+
+  <ul class= 'header-btn'>
+    <%= link_to image_tag("Favapp.png", class:"favapp-icon"), "/" %>
+    <% if user_signed_in? %>
+    <li><%= link_to current_user.name, '#', class: 'header-name' %></li>
+    <li><%= link_to 'ログアウト', destroy_user_session_path, class: 'header-logout', data: { turbo_method: :delete } %></li>
+    <li><%= link_to 'おすすめアプリ投稿', '#', class: 'main-post' %></li>
+    <li><%= link_to '投稿一覧', '#', class: 'main-posts' %></li>
+    <% else %>
+    <li><%= link_to 'ログイン', new_user_session_path, class: 'header-login' %></li>
+    <li><%= link_to '新規登録', new_user_registration_path, class: 'header-signup' %></li>
+    <% end %>
+  </ul>
+
+
+</header>
