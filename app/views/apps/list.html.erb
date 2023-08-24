@@ -1,0 +1,30 @@
+<%= render "shared/header" %>
+
+  <div class='posts-contents'>
+  <div class='toumei'>
+    <ul class='posts-lists'>
+      <% @apps.each do |app| %>
+      <li class='list'>
+        <%#= link_to item_path(app.id) do %>
+        <%= link_to '/' do %>
+        <div class='post-img-content'>
+          <%= image_tag app.image, class: "post-img" %>
+        </div>
+        <div class='post-info'>
+          <h3 class='new-post-name'>
+            <%= app.name %>
+          </h3>
+            <span><%= app.content %><br><%= "#{Genre.find(app.genre_id).name}" %></span>
+            <div class='star-btn'>
+              <%#= image_tag "star.png", class:"star-icon" %>
+              <span class='star-count'>0</span>
+          </div>
+        </div>
+        <% end %>
+      <% end %>
+      </li>
+    </ul>
+  </div>
+  </div>
+
+  <%#= render "shared/footer" %>

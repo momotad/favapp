@@ -1,4 +1,6 @@
 class AppsController < ApplicationController
+  before_action :authenticate_user!, except: [:index]
+
   def index
   end
 
@@ -10,7 +12,7 @@ class AppsController < ApplicationController
     @app = App.new(app_params)
     if @app.valid?
       @app.save
-      redirect_to '/'
+      redirect_to list_apps_path
     else
       render :new, status: :unprocessable_entity
     end
