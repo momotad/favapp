@@ -8,8 +8,17 @@ class AppsController < ApplicationController
 
   def create
     @app = App.new(app_params)
+    if @app.valid?
+      @app.save
+      redirect_to '/'
+    else
+      render :new, status: :unprocessable_entity
+    end
   end
 
+  def list
+    @apps = App.all.order('created_at DESC')
+  end
 
 
   private

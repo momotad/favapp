@@ -7,19 +7,19 @@
 
 <%# 投稿フォーム %>
     <%# アプリ名 %>
-    <div class="new-items">
+    <div class="new-apps">
       <%= f.text_area :name, class:"post-name", id:"item-name", placeholder:"アプリ名", maxlength:"40" %>
-      <div class="items-explain">
+      <div class="apps-explain">
     </div>
     <%# おすすめポイント %>
-    <div class="new-items">
+    <div class="new-apps">
       <%= f.text_area :content, class:"post-text", id:"item-content", placeholder:"おすすめポイント", maxlength:"200" %>
-      <div class="items-explain">
+      <div class="apps-explain">
     </div>
     <%# ジャンル %>
-    <div class="new-items">
-      <%#= f.collection_select(:genre_id, Genre.all, :id, :name, {}, {class:"select-box", id:"item-shipping-fee-status"}) %>
-      <div class="items-explain">
+    <div class="new-apps">
+      <%= f.collection_select(:genre_id, Genre.all, :id, :name, {}, {class:"select-box", id:"app-genre"}) %>
+      <div class="apps-explain">
     </div>
     <%# 画像 %>
     <div class="img-upload">
