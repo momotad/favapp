@@ -1,7 +1,7 @@
 .registration-main {
-  width: 100%;
+  width: 100vw;
   min-width: 800px;
-  height: calc(100vh - 130px);
+  height: 75vh;
   background-color: black;
   display: flex;
   justify-content: center;
