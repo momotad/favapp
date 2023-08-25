@@ -1,6 +1,6 @@
 class AppsController < ApplicationController
   before_action :authenticate_user!, except: [:index]
-
+  before_action :set_app, only: [:show, :edit, :update]
   def index
   end
 
@@ -23,13 +23,32 @@ class AppsController < ApplicationController
   end
 
   def show
-    @app = App.find(params[:id])
+  end
+
+  def edit
+    if current_user.id == @app.user.id
+      render :edit
+    else
+      redirect_to '/'
+    end
+  end
+
+  def update
+    if @app.update(app_params)
+      redirect_to list_app_apps_path
+    else
+      render :edit, status: :unprocessable_entity
+    end
   end
 
 
   private
   def app_params
     params.require(:app).permit(:image, :name, :content, :genre_id).merge(user_id: current_user.id)
+  end
+
+  def set_app
+    @app = App.find(params[:id])
   end
 
 end

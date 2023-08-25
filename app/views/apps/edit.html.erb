@@ -1,0 +1,40 @@
+<%= render "shared/header" %>
+
+<div class ='new-main-post'>
+<%#= link_to image_tag("Favapp.png", class:"favapp-new-logo"), "/" %>
+  <h2 class= 'new-post-title'>編集</h2>
+  <%= form_with model:@app, data: { turbo: false }, local: true do |f| %>
+
+  <%= render 'shared/error_messages', model: f.object %>
+
+<%# 投稿フォーム %>
+    <%# アプリ名 %>
+    <div class="new-apps">
+      <%= f.text_area :name, class:"post-name", id:"item-name", placeholder:"アプリ名", maxlength:"40" %>
+      <div class="apps-explain">
+    </div>
+    <%# おすすめポイント %>
+    <div class="new-apps">
+      <%= f.text_area :content, class:"post-text", id:"item-content", placeholder:"おすすめポイント", maxlength:"200" %>
+      <div class="apps-explain">
+    </div>
+    <%# ジャンル %>
+    <div class="new-apps">
+      <%= f.collection_select(:genre_id, Genre.all, :id, :name, {}, {class:"select-box", id:"app-genre"}) %>
+      <div class="apps-explain">
+    </div>
+    <%# 画像 %>
+    <div class="img-upload">
+      <div class="click-upload">
+        <p>
+          お気に入りのシーンをアップロードしよう!
+        </p>
+        <%= f.file_field :image, id:"item-image" %>
+      </div>
+    </div>
+    <div class="sell-btn-contents">
+      <%= f.submit "Update" ,class:"new-post-btn" %>
+    </div>
+
+  <% end %>
+</div>
