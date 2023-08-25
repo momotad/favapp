@@ -1,6 +1,6 @@
 class AppsController < ApplicationController
   before_action :authenticate_user!, except: [:index]
-  before_action :set_app, only: [:show, :edit, :update]
+  before_action :set_app, only: [:show, :edit, :update, :destroy]
   def index
   end
 
@@ -38,6 +38,13 @@ class AppsController < ApplicationController
       redirect_to list_app_apps_path
     else
       render :edit, status: :unprocessable_entity
+    end
+  end
+
+  def destroy
+    if user_signed_in? && current_user.id == @app.user.id
+      @app.destroy
+      redirect_to '/'
     end
   end
 
