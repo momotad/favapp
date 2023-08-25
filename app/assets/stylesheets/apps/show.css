@@ -1,0 +1,157 @@
+/* 概要 */
+
+.post-show {
+  background-color: black;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1vh 0;
+}
+
+.post-box {
+  background-color: black;
+  width: 70vw;
+  min-width: 1200px;
+  padding: 5vh 15vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post-box>.name {
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  color: white;
+  padding-bottom: 5px;
+}
+
+.post-box-img {
+  height: 50vh;
+  width: 60vw;
+  min-height: 500px;
+  background-color: black;
+  object-fit: contain;
+}
+
+.show-btn {
+  display: flex;
+}
+
+.edit-post-btn {
+  color: black;
+  padding: 10px 50px;
+  background-color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 100vh;
+  margin-right: 100px;
+}
+
+.post-destroy {
+  color: black;
+  padding: 10px 50px;
+  background-color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 100vh;
+}
+
+.post-explain-box {
+  font-size: 18px;
+  margin: 40px 0px;
+  overflow-wrap: anywhere;
+  color: white;
+}
+
+.detail-table {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.detail-post {
+  width: 20%;
+  background-color: white;
+  border: 1px solid lightgray;
+  font-size: 16px;
+  text-align: center;
+}
+
+.detail-user {
+  width: 80%;
+  padding: 20px;
+  border: 1px solid #dedede;
+  font-size: 16px;
+  color: white;
+}
+
+.option {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.favorite-btn {
+  border-radius: 40px;
+  width: 5vw;
+  min-width: 100px;
+  color: white;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  height: 5vh;
+}
+
+.favorite-star-icon {
+  margin-right: 5px;
+}
+
+/* /概要 */
+
+.comment-box {
+  width: 40vw;
+  background-color: #fff;
+  margin: 5vh 0;
+  text-align: center;
+}
+
+.comment-text {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border: solid 2px #dedede;
+  resize: none;
+}
+
+.comment-warn {
+  padding: 10px;
+  font-size: 14px;
+  margin: 10px 0px;
+  text-align: left;
+}
+
+.comment-btn {
+  line-height: 48px;
+  background-color: #3CCACE;
+  border: 1px solid #3CCACE;
+  color: #fff;
+  width: 50%;
+  min-width: 150px;
+  font-size: 18px;
+  border-radius: 100px;
+  margin-bottom: 2vh;
+}
+
+.comment-flag {
+  display: flex;
+  justify-content: center;
+}
+
+.comment-flag-icon {
+  margin: 10px 5px 0 0;
+}
