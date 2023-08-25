@@ -1,4 +1,6 @@
 class AppsController < ApplicationController
+  before_action :authenticate_user!, except: [:index]
+
   def index
   end
 
@@ -8,8 +10,17 @@ class AppsController < ApplicationController
 
   def create
     @app = App.new(app_params)
+    if @app.valid?
+      @app.save
+      redirect_to list_apps_path
+    else
+      render :new, status: :unprocessable_entity
+    end
   end
 
+  def list
+    @apps = App.all.order('created_at DESC')
+  end
 
 
   private
