@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     collection do
       get 'list'
       get 'list/:id', to: 'apps#show', as: 'list_app'
+      get 'list/:id/edit', to: 'apps#edit', as: 'edit_list_app'
     end
   end
 
