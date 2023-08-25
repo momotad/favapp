@@ -1,6 +1,8 @@
+<%= render "shared/header" %>
+
 <div class ='new-main-post'>
-<%= link_to image_tag("Favapp.png", class:"favapp-new-logo"), "/" %>
-  <h2 class= 'new-post-title'>新規投稿</h2>
+<%#= link_to image_tag("Favapp.png", class:"favapp-new-logo"), "/" %>
+  <h2 class= 'new-post-title'>編集</h2>
   <%= form_with model:@app, data: { turbo: false }, local: true do |f| %>
 
   <%= render 'shared/error_messages', model: f.object %>
@@ -31,7 +33,7 @@
       </div>
     </div>
     <div class="sell-btn-contents">
-      <%= f.submit "Post" ,class:"new-post-btn" %>
+      <%= f.submit "Update" ,class:"new-post-btn" %>
     </div>
 
   <% end %>

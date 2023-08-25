@@ -13,7 +13,7 @@
     <% if user_signed_in? %>
       <% if current_user.id == @app.user_id  %>
       <div class= 'show-btn'>
-        <%= link_to "編集", '/', method: :get, class: "edit-post-btn" %>
+        <%= link_to "編集", edit_list_app_apps_path, method: :get, class: "edit-post-btn" %>
         <%= link_to "削除", '/', data: { turbo_method: :delete }, class:"post-destroy" %>
       </div>
       <% end %>
@@ -46,11 +46,6 @@
   <div class="comment-box">
     <form>
       <textarea class="comment-text"></textarea>
-      <p class="comment-warn">
-        相手のことを考え丁寧なコメントを心がけましょう。
-        <br>
-        不快な言葉遣いなどは利用制限や退会処分となることがあります。
-      </p>
       <button type="submit" class="comment-btn">
         <%# <%= image_tag "comment.png" ,class:"comment-flag-icon" ,width:"20",height:"25"%>
         <span>コメントする<span>
