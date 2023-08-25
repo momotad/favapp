@@ -1,0 +1,61 @@
+<%= render "shared/header" %>
+
+<%# 商品の概要 %>
+<div class="post-show">
+  <div class="post-box">
+    <h2 class="name">
+      <%= @app.name %>
+    </h2>
+    <div class="post-img-content">
+      <%= image_tag @app.image ,class:"post-box-img" %>
+    </div>
+    
+    <% if user_signed_in? %>
+      <% if current_user.id == @app.user_id  %>
+      <div class= 'show-btn'>
+        <%= link_to "編集", '/', method: :get, class: "edit-post-btn" %>
+        <%= link_to "削除", '/', data: { turbo_method: :delete }, class:"post-destroy" %>
+      </div>
+      <% end %>
+    <% end %>
+
+    <div class="post-explain-box">
+      <span><%= @app.content %></span>
+    </div>
+    <table class="detail-table">
+      <tbody>
+        <tr>
+          <th class="detail-post">投稿者</th>
+          <td class="detail-user"><%= @app.user.name %></td>
+        </tr>
+        <tr>
+          <th class="detail-post">ジャンル</th>
+          <td class="detail-user"><%= Genre.find(@app.genre_id).name %></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="option">
+      <div class="favorite-btn">
+        <%# <%= image_tag "star.png" ,class:"favorite-star-icon" ,width:"20",height:"20"%>
+        <span>💗　0</span>
+      </div>
+    </div>
+  </div>
+  <%# /商品の概要 %>
+
+  <div class="comment-box">
+    <form>
+      <textarea class="comment-text"></textarea>
+      <p class="comment-warn">
+        相手のことを考え丁寧なコメントを心がけましょう。
+        <br>
+        不快な言葉遣いなどは利用制限や退会処分となることがあります。
+      </p>
+      <button type="submit" class="comment-btn">
+        <%# <%= image_tag "comment.png" ,class:"comment-flag-icon" ,width:"20",height:"25"%>
+        <span>コメントする<span>
+      </button>
+    </form>
+  </div>
+</div>
+
