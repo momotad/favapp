@@ -22,6 +22,10 @@ class AppsController < ApplicationController
     @apps = App.all.order('created_at DESC')
   end
 
+  def show
+    @app = App.find(params[:id])
+  end
+
 
   private
   def app_params

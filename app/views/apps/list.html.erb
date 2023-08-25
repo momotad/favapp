@@ -6,7 +6,7 @@
       <% @apps.each do |app| %>
       <li class='list'>
         <%#= link_to item_path(app.id) do %>
-        <%= link_to '/' do %>
+        <%= link_to list_app_apps_path(app.id) do %>
         <div class='post-img-content'>
           <%= image_tag app.image, class: "post-img" %>
         </div>
