@@ -23,6 +23,8 @@ class AppsController < ApplicationController
   end
 
   def show
+    @comments = @app.comments.includes(:user)
+    @comment = Comment.new
   end
 
   def edit
