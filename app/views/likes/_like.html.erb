@@ -1,0 +1,5 @@
+    <% if user_signed_in? && app.liked_by?(current_user)%>
+      <%=link_to "💗", like_destroy_list_app_apps_path(app.id), data: { turbo_method: :delete }, class: "app_likes", remote: true %>
+    <% else %>
+      <%=link_to "🤍", like_create_list_app_apps_path(app.id), data: { turbo_method: :post }, class: "app_likes", remote: true %>
+    <% end %>
