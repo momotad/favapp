@@ -36,8 +36,15 @@
     </table>
     <div class="option">
       <div class="favorite-btn">
+          <div id="like-btn<%= @app.id %>">
+    <% if user_signed_in? && @app.liked_by?(current_user)%>
+      <%=link_to "💗", (@app.id),  like_destroy_list_app_apps_path(@app.id), data: { turbo_method: :delete }, class: "tweet_likes" %>
+    <% else %>
+      <%=link_to "🤍", like_create_list_app_apps_path(@app.id), data: { turbo_method: :post }, class: "tweet_likes" %>
+    <% end %>
+  </div>
         <%# <%= image_tag "star.png" ,class:"favorite-star-icon" ,width:"20",height:"20"%>
-        <span>💗　0</span>
+        <%# <span>💗　0</span> %>
       </div>
     </div>
   </div>
