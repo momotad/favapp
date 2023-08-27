@@ -4,6 +4,7 @@ class App < ApplicationRecord
 
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :genre
+  has_manyu :likes
 
   validates :image, presence: true
   validates :name, presence: true
