@@ -55,7 +55,7 @@
     <% end %>
 </div>
   <div class="comment-form">
-    <%= form_with model: [@app, @comment], url: comment_create_list_app_apps_path(@app),id: "comment-form" do |f| %>
+    <%= form_with model: [@app, @comment], data: { turbo: false }, url: comment_create_list_app_apps_path(@app), id: "comment-form" do |f| %>
       <div class= 'comment-btn'>
         <%= f.text_area :content , class: "comment-text"%>
         <%= f.submit "send", class: "comment-submit" %>
