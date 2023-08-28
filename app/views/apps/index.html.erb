@@ -11,7 +11,7 @@
       </div>
       <ul class= 'main-menu'>
       <% unless user_signed_in? %>
-      <li><%= link_to '新規登録', new_user_registration_path, class: 'main-sign-btn' %></li>
+      <li><%= link_to '新規登録', new_user_registration_path,data: { turbo: false }, class: 'main-sign-btn' %></li>
       <% end %>
       </ul>
     </div>

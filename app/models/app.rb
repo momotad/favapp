@@ -5,6 +5,7 @@ class App < ApplicationRecord
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :genre
   has_many :likes
+  has_many :comments
 
   validates :image, presence: true
   validates :name, presence: true
