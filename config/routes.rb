@@ -15,6 +15,7 @@ Rails.application.routes.draw do
       delete 'list/:id/like', to: 'likes#destroy', as: 'like_destroy_list_app'
       get 'list/:id/edit', to: 'apps#edit', as: 'edit_list_app'
       post 'list/:id/comment', to: 'comments#create', as: 'comment_create_list_app'
+      get 'search'
     end
   end
 
