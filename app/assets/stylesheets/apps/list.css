@@ -42,6 +42,10 @@
   padding: 1vw;
 }
 
+.sen:hover{
+  border: 1px white solid;
+}
+
 .list-link {
   text-decoration: none;
 }
