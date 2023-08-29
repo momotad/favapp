@@ -1,0 +1,39 @@
+  <%# CSS・・・assets/stylesheets/shared/header.css %>
+<header class= 'top-page-header'>
+
+  <ul class= 'header-btn'>
+    <%= link_to image_tag("Favapp.png", class:"favapp-logo"), "/" %>
+    <% if user_signed_in? %>
+    <li><%= link_to current_user.name, edit_user_path(current_user), class: 'header-name' %></li>
+    <li><%= link_to 'ログアウト', destroy_user_session_path, class: 'header-logout', data: { turbo_method: :delete } %></li>
+    <li><%= link_to 'おすすめアプリ投稿', new_app_path, class: 'main-post' %></li>
+    <li><%= link_to '投稿一覧', list_apps_path, class: 'main-posts' %></li>
+    <li><%= link_to '検索', search_apps_path, class: 'main-search' %></li>
+    <%= search_form_for @q, url:search_apps_path , html: {id: "detailed-search-form"} do |f| %>
+    <div class='header-search'>
+    <div class="search-field">
+    <div class='search-app-name'>
+    <%= f.text_field :name_cont, placeholder: 'アプリ名' %>
+    </div>
+    <div class='search-submit'>
+    <%= f.submit 'Search', class: 'search-submit-btn' %>
+    </div>
+    </div>
+    <div class="search-field">
+    <div class='search-app-name'>
+    <%= f.collection_select(:genre_id_eq, Genre.all, :id, :name) %>
+    </div>
+    <div class='search-submit'>
+    <%= f.submit 'Search', class: 'search-submit-btn' %>
+    </div>
+    </div>
+    </div>
+  <% end %>
+    <% else %>
+    <li><%= link_to 'ログイン', new_user_session_path, class: 'header-login' %></li>
+    <li><%= link_to '新規登録', new_user_registration_path, class: 'header-signup' %></li>
+    <% end %>
+  </ul>
+
+
+</header>
