@@ -1,0 +1,58 @@
+.header-search {
+  display: flex;
+}
+
+#detailed-search-wrapper{
+  display:flex;
+  justify-content: center;
+}
+
+#detailed-search-form{
+  background-color: black;
+  width: 350px;
+}
+
+.search-field{
+  margin: 0.5rem 0;
+  display:flex;
+  margin-right: 20px;
+}
+
+.search-submit-btn {
+  margin-left: 5px;
+  color: black;
+  padding: 5px 10px;
+  background-color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 100vh;
+  font-size: 10px;
+}
+
+#detailed-search-result-wrapper{
+  width: 80%;
+  display: flex;
+}
+
+.list{
+  list-style: none;
+}
+
+#detailed-search-result{
+  width: 100%;
+  display: flex;
+}
+
+.posted-content{
+  margin: 10px;
+}
+
+.check_lb {
+  display:block;
+}
+
+#post_search{
+  display: flex;
+}
+
