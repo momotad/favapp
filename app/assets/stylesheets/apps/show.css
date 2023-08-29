@@ -11,8 +11,6 @@
 
 .post-box {
   background-color: black;
-  /* width: 70vw; */
-  /* min-width: 1200px; */
   padding: 5vh 15vw;
   display: flex;
   flex-direction: column;
@@ -106,41 +104,6 @@
   font-weight: bold;
   height: 5vh;
 }
-
-.favorite-star-icon {
-  margin-right: 5px;
-}
-
-/* /概要 */
-
-/* .comment-box {
-  width: 40%;
-  background-color: #fff;
-  margin: 5vh 0;
-  text-align: center;
-} */
-
-
-/* .comment-warn {
-  padding: 10px;
-  font-size: 14px;
-  margin: 10px 0px;
-  text-align: left;
-} */
-
-
-
-.comment-flag {
-  display: flex;
-  justify-content: center;
-}
-
-.comment-flag-icon {
-  margin: 10px 5px 0 0;
-}
-/* .comment-form{
-  display: flex;
-} */
 
 .comment-btn {
   display: flex;
