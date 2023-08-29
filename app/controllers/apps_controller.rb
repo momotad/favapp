@@ -50,6 +50,11 @@ class AppsController < ApplicationController
     end
   end
 
+  def search
+    @q = App.ransack(params[:q])
+    @apps = @q.result
+  end
+
 
   private
   def app_params

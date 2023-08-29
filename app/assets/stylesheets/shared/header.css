@@ -38,6 +38,13 @@
 
 .main-posts {
   color: white;
+  margin-right: 50px;
+  text-decoration: none;
+}
+
+.main-search {
+  color: white;
+  margin-right: 20px;
   text-decoration: none;
 }
 
