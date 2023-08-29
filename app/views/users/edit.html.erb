@@ -1,0 +1,31 @@
+<%= render "shared/second-header"%>
+
+<%= form_with model: current_user, class: 'registration-main', local: true do |f| %>
+<div class= 'form-wrap'>
+  <div class= 'form-header'>
+    <h1 class= 'form-header-text'> ユーザー情報編集 </h1>
+  </div>
+
+    <%= render 'shared/error_messages', model: f.object %>
+
+  <div class="form-group">
+    <div class='form-text-wrap'>
+      <label class="form-text">ニックネーム</label>
+    </div>
+    <%= f.text_area :name, class:"input-default", id:"name",  maxlength:"30" %>
+  </div>
+  <div class="form-group">
+    <div class='form-text-wrap'>
+      <label class="form-text">メールアドレス</label>
+    </div>
+    <%= f.email_field :email, class:"input-default", id:"email", autofocus: true %>
+  </div>
+  <div class="form-group">
+    <div class='register-btn'>
+      <%= f.submit "Update" ,class:"register-signup-btn" %>
+    </div>
+  </div>
+</div>
+<% end %>
+
+<%= render "shared/footer" %>

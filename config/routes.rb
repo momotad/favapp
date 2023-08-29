@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
-  root to: "apps#index"
+  resources :users, only: [:edit, :update]
+  root "apps#index"
   resources :likes, only: [:create, :destroy]
   resources :comments, only: :create
   resources :apps do
