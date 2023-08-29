@@ -16,4 +16,8 @@ class App < ApplicationRecord
     likes.where(user_id: user.id).exists?
   end
   
+  def self.ransackable_attributes(auth_object = nil)
+    ["name", "genre_id"]
+  end
+
 end
