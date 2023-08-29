@@ -13,7 +13,7 @@
     <% if user_signed_in? %>
       <% if current_user.id == @app.user_id  %>
       <div class= 'show-btn'>
-        <%= link_to "編集", edit_list_app_apps_path, method: :get, class: "edit-post-btn" %>
+        <%= link_to "編集", edit_list_app_apps_path, class: "edit-post-btn" %>
         <%= link_to "削除", destroy_list_app_apps_path, data: { turbo_method: :delete }, class:"post-destroy" %>
       </div>
       <% end %>
@@ -39,8 +39,6 @@
           <div id="like-btn<%= @app.id %>">
             <%= render partial: "likes/like", locals: { app: @app } %>
           </div>
-        <%# <%= image_tag "star.png" ,class:"favorite-star-icon" ,width:"20",height:"20"%>
-        <%# <span>💗　0</span> %>
       </div>
     </div>
   </div>

@@ -40,9 +40,11 @@
 .posts-lists>.list {
   width: 37vh;
   padding: 1vw;
-  /* background-color: #FFF; */
 }
 
+.list-link {
+  text-decoration: none;
+}
 
 .post-img-content {
   position: relative;
@@ -57,6 +59,11 @@
   background-color: #FFF;
   color: black;
   padding: 1vw;
+}
+
+.post-contents-box {
+  display: flex;
+  justify-content: space-between;
 }
 
 .new-post-name {
