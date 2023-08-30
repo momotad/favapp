@@ -11,20 +11,20 @@
     <li><%= link_to '検索', search_apps_path, class: 'main-search' %></li>
     <%= search_form_for @q, url:search_apps_path , html: {id: "detailed-search-form"} do |f| %>
     <div class='header-search'>
-    <div class="search-field">
-    <div class='search-app-name'>
-    <%= f.text_field :name_cont, placeholder: 'アプリ名' %>
-    </div>
-    <div class='search-submit'>
-    <%= f.submit 'Search', class: 'search-submit-btn' %>
-    </div>
-    </div>
+    <%# <div class="search-field"> %>
+    <%# <div class='search-app-name'> %>
+    <%# <%= f.text_field :name_cont, placeholder: 'アプリ名' %> %>
+    <%# </div> %>
+    <%# <div class='search-submit'> %>
+    <%# <%= f.submit 'Search', class: 'search-submit-btn',id: 'search-submit-name' %> %>
+    <%# </div> %>
+    <%# </div> %>
     <div class="search-field">
     <div class='search-app-name'>
     <%= f.collection_select(:genre_id_eq, Genre.all, :id, :name) %>
     </div>
     <div class='search-submit'>
-    <%= f.submit 'Search', class: 'search-submit-btn' %>
+    <%= f.submit 'Search', class: 'search-submit-btn',id: 'search-submit-genre' %>
     </div>
     </div>
     </div>
