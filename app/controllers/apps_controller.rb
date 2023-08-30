@@ -44,10 +44,10 @@ class AppsController < ApplicationController
   end
 
   def destroy
-    if user_signed_in? && current_user.id == @app.user.id
-      @app.destroy
-      redirect_to '/'
-    end
+    return unless user_signed_in? && current_user.id == @app.user.id
+
+    @app.destroy
+    redirect_to '/'
   end
 
   def search
@@ -55,8 +55,8 @@ class AppsController < ApplicationController
     @apps = @q.result
   end
 
-
   private
+
   def app_params
     params.require(:app).permit(:image, :name, :content, :genre_id).merge(user_id: current_user.id)
   end
@@ -64,5 +64,4 @@ class AppsController < ApplicationController
   def set_app
     @app = App.find(params[:id])
   end
-
 end
