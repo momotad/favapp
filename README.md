@@ -1,75 +1,69 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## アプリケーション名
+FavApp（ファボアップ）
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-# アプリケーション名
-Fav App（ファボアップ）
-
-# アプリケーション概要
+## アプリケーション概要
 - おすすめのアプリをユーザー同士でシェアし、コミュニケーションを図る
 - 利用したことのないアプリに巡り会える
 
-# URL
+## URL
+https://favapp.onrender.com/
 
+## テスト用アカウント
+- Basic認証パスワード：admin
+- Basic認証ID：Karipass1
+- 投稿者1 メールアドレス：test@test
+- 投稿者1 パスワード：111aaa
+- 投稿者2 メールアドレス：test@test.test
+- 投稿者2 パスワード：111aaa
 
-# テスト用アカウント
-- Basic認証パスワード：
-- Basic認証ID：
-- メールアドレス：test@test
-- パスワード：111aaa
-
-# 利用方法
-## おすすめアプリ投稿
-1.トップページから「新規登録」を行う  
-2.ヘッダーの「おすすめアプリ投稿」から「アプリ名」、「おすすめポイント」、「ジャンル」、「お気に入りシーン（画像）」を入力し「Post」ボタンをクリックする
-## 投稿一覧と詳細を閲覧
-1.ヘッダーの「投稿一覧」をクリックする  
+## 利用方法
+### ユーザー新規登録
+1.「新規登録」ボタンをクリックする  
+2.ニックネーム、メールアドレス、パスワード、パスワード（確認）を入力し、「SignUp」をクリックする
+### ユーザー編集機能
+1.ヘッダーの「ユーザー名」をクリックする  
+2.ニックネームとメールアドレスを編集し、「Update」ボタンをクリックする
+### ログイン/ログアウト機能
+1.ヘッダーの「ログイン」ボタンをクリックする  
+2.メールアドレス、パスワードを入力し「Login」ボタンをクリックする  
+3.ヘッダーの「ログアウト」ボタンをクリックする
+### おすすめアプリ投稿
+1.ヘッダーの「おすすめアプリ投稿」ボタンをクリックする  
+2.アプリ名、おすすめポイント、ジャンル、お気に入りシーン（画像）を入力し「Post」ボタンをクリックする
+### 投稿一覧と詳細を閲覧
+1.ヘッダーの「投稿一覧」ボタンをクリックする  
 2.投稿された内容をクリックし詳細ページに遷移する
-## 投稿内容の編集と削除
-自身が投稿した詳細ページに遷移する  
+### 投稿内容の編集/削除
+1.自身が投稿した詳細ページに遷移する  
 - 「編集」ボタンをクリックし、投稿内容編集後「Update」ボタンをクリックする  
 - 「削除」ボタンをクリックする
-## 「いいね」機能
+### 「いいね」機能
 1.詳細ページに遷移する  
 2.「🤍」ボタンをクリックする  
-## コメント機能
+3.クリックすると「💗」に変わり、自分がクリックしているか把握できる  
+4.ボタン横にいいね数が表示される
+### コメント機能
 1.詳細ページに遷移する  
-2.ページ下部のコメントフォームに文字を入力し、「コメント」ボタンをクリックする  
+2.ページ下部のコメントフォームに文字を入力し、「send」ボタンをクリックする  
 3.コメント一覧が同ページに表示され、コメントが閲覧できる
-## 検索機能
-1.  
+### 検索機能
+1.ヘッダーの「検索」をボタンクリックする  
+2.検索フォームからジャンルを選択し「Search」ボタンをクリックする  
+3.合致したジャンルが表示される  
+### HOME画面に戻る
+アプリロゴをクリックする
 
-
-# アプリケーションを作成した背景
+## アプリケーションを作成した背景
 - 同じアプリを利用している人とコミュニケーションを図る場が欲しい  
 - 暇つぶしできるアプリを探す場が欲しい  
 上記の課題から、「おすすめのアプリを投稿できる」、「投稿内容を閲覧できる」、「コメント機能やいいね機能がある」ことで課題を解決できると推測し、おすすめアプリを共有しコミュニケーションを促進できるSNSアプリケーションを開発することにした。
 
-# 洗い出した要件
+## 洗い出した要件
 https://docs.google.com/spreadsheets/d/1L677pgABIyWOUPuCiYRJwLVfDAAAtKkaneg-77arrac/edit?usp=sharing
 
-# 実装した機能についての画像およびその説明
+## 実装した機能についての画像およびその説明
 #### 新規ユーザー登録画面
 [![Image from Gyazo](https://i.gyazo.com/06e501f76a1299cf9324512ff5f9fba3.png)](https://gyazo.com/06e501f76a1299cf9324512ff5f9fba3)
 
@@ -85,39 +79,37 @@ https://docs.google.com/spreadsheets/d/1L677pgABIyWOUPuCiYRJwLVfDAAAtKkaneg-77ar
 #### おすすめアプリ詳細画面
 
 
-# 実装予定の機能
+## 実装予定の機能
 
 
-# データベース設計
+## データベース設計
 [![Image from Gyazo](https://i.gyazo.com/34dfcb20fd0be51f2168124b29fb6837.png)](https://gyazo.com/34dfcb20fd0be51f2168124b29fb6837)
 
-# 画面遷移図
-[![Image from Gyazo](https://i.gyazo.com/8367ae31ad1b36ad04349acc8ddd02b7.png)](https://gyazo.com/8367ae31ad1b36ad04349acc8ddd02b7)
+## 画面遷移図
+[![Image from Gyazo](https://i.gyazo.com/fc43997eaa2bb22194dee038c1e0c0c6.png)](https://gyazo.com/fc43997eaa2bb22194dee038c1e0c0c6)
 
-# 開発環境
-- フロントエンド：HTML、CSS
-- バックエンド：Ruby、JavaScript
+## 開発環境
+- フロントエンド：HTML、CSS、JavaScript
+- バックエンド：Ruby、Ruby on Rails
 - データベース：MySQL
-- インフラ：render
+- インフラ：Render(無料枠)
 - テスト：RSpec
 - 外部サービス、タスク管理：GitHub
-- テキストエディタ
+- VScode
 
-# ローカルでの動作方法
+## ローカルでの動作方法
 
 
-# 工夫したポイント
+## 工夫したポイント
 - サイトの見た目作りです。第一印象で見にくいと感じないよう、余白に気をつけて制作しました（書籍「けっきょく、よはく」参考）
-- 任意のアクションを追加したことです。テックキャンプではrailsに定義されている7つのアクションのみ使用しておりました。トップページを制作したかったので、ネットで検索し自力で実装しました。
+- 任意のアクションを追加したことです。テックキャンプではrailsに定義されている7つのアクションのみ使用しておりました。ネットで検索し自力で実装しました。
+
+<br>
 
 
+## テーブル設計
 
-
-
-
-# テーブル設計
-
-## users テーブル
+### users テーブル
 
 | Column             | Type    | Options                  |
 | ------------------ | ------  | ------------------------ |
@@ -125,13 +117,13 @@ https://docs.google.com/spreadsheets/d/1L677pgABIyWOUPuCiYRJwLVfDAAAtKkaneg-77ar
 | email              | string  | null: false, unique:true |
 | password           | string  | null: false              |
 
-### Association
+#### Association
 
 - has_many :apps
 - has_many :comments
 - has_many :likes
 
-## apps テーブル
+### apps テーブル
 
 | Column      | Type       | Options                        |
 | ----------- | ---------- | -----------------------------  |
@@ -140,14 +132,14 @@ https://docs.google.com/spreadsheets/d/1L677pgABIyWOUPuCiYRJwLVfDAAAtKkaneg-77ar
 | content     | text       | null: false                    |
 | genre_id    | integer    | null: false                    |
 
-### Association
+#### Association
 
 - belongs_to :user
 - has_many :comments
 - has_many :likes
 - belongs_to :genre
 
-## comments テーブル
+### comments テーブル
 
 | Column      | Type       | Options                        |
 | ----------- | ---------- | -----------------------------  |
@@ -155,19 +147,19 @@ https://docs.google.com/spreadsheets/d/1L677pgABIyWOUPuCiYRJwLVfDAAAtKkaneg-77ar
 | app         | references | null: false, foreign_key: true |
 | content     | text       | null: false                    |
 
-### Association
+#### Association
 
 - belongs_to :user
 - belongs_to :app
 
-## likes テーブル
+### likes テーブル
 
 | Column      | Type       | Options                        |
 | ----------- | ---------- | -----------------------------  |
 | user        | references | null: false, foreign_key: true |
 | app         | references | null: false, foreign_key: true |
 
-### Association
+#### Association
 
 - belongs_to :user
 - belongs_to :app
