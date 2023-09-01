@@ -1,7 +1,7 @@
 <div class ='new-main-post'>
 <%= link_to image_tag("Favapp.png", class:"favapp-new-logo"), "/" %>
   <h2 class= 'new-post-title'>新規投稿</h2>
-  <%= form_with model:@app, data: { turbo: false }, local: true do |f| %>
+  <%= form_with model:@app, local: true do |f| %>
 
   <%= render 'shared/error_messages', model: f.object %>
 
