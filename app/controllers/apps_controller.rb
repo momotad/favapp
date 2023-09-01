@@ -1,7 +1,12 @@
 class AppsController < ApplicationController
-  before_action :authenticate_user!, except: [:index]
+  before_action :authenticate_user!, except: [:about]
   before_action :set_app, only: [:show, :edit, :update, :destroy]
+
   def index
+    @apps = App.all.order('created_at DESC')
+  end
+
+  def about
   end
 
   def new
@@ -16,10 +21,6 @@ class AppsController < ApplicationController
     else
       render :new, status: :unprocessable_entity
     end
-  end
-
-  def list
-    @apps = App.all.order('created_at DESC')
   end
 
   def show
@@ -37,7 +38,7 @@ class AppsController < ApplicationController
 
   def update
     if @app.update(app_params)
-      redirect_to list_app_apps_path
+      redirect_to app_path(@app.id)
     else
       render :edit, status: :unprocessable_entity
     end
@@ -47,7 +48,7 @@ class AppsController < ApplicationController
     return unless user_signed_in? && current_user.id == @app.user.id
 
     @app.destroy
-    redirect_to '/'
+    redirect_to app_path(@app.id)
   end
 
   def search

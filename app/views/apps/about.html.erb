@@ -1,0 +1,21 @@
+<%= render "shared/header" %>
+
+<div class= 'main'>
+  <div class= 'main-content'>
+    <div class= 'main-name'>FavApp</div>
+    <div class= 'main-right'>
+      <div class= 'main-text'>
+        <h1>おすすめのアプリを紹介しよう</h1>
+        <p>いいねやコメント機能があるよ</p>
+        <p>暇つぶしできるアプリが見つかるかも・・？</p>
+      </div>
+      <ul class= 'main-menu'>
+      <% unless user_signed_in? %>
+      <li><%= link_to '新規登録', new_user_registration_path,data: { turbo: false }, class: 'main-sign-btn' %></li>
+      <% end %>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<%= render "shared/footer" %>

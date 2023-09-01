@@ -2,7 +2,7 @@ class LikesController < ApplicationController
   before_action :set_app
 
   def create
-    like = current_user.likes.build(app_id: params[:id])
+    like = current_user.likes.build(app_id: params[:app_id])
     like.save
     respond_to do |format|
       format.js
@@ -10,7 +10,7 @@ class LikesController < ApplicationController
   end
 
   def destroy
-    like = Like.find_by(app_id: params[:id], user_id: current_user.id)
+    like = Like.find_by(app_id: params[:app_id], user_id: current_user.id)
     like.destroy
     respond_to do |format|
       format.js
@@ -18,6 +18,6 @@ class LikesController < ApplicationController
   end
 
   def set_app
-    @app = App.find(params[:id])
+    @app = App.find(params[:app_id])
   end
 end

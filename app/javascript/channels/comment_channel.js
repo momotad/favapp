@@ -4,7 +4,7 @@ import consumer from "./consumer"
 if(location.pathname.match(/\/list\/\d/)){
   consumer.subscriptions.create({
     channel: "CommentChannel",
-    id: location.pathname.match(/\d+/)[0]
+    app_id: location.pathname.match(/\d+/)[0]
   }, {
 
   connected() {
