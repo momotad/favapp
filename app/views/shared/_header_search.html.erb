@@ -4,12 +4,12 @@
   <ul class= 'header-btn'>
     <%= link_to image_tag("Favapp.png", class:"favapp-logo"), "/" %>
     <% if user_signed_in? %>
-    <li><%= link_to current_user.name, edit_user_path(current_user),data: { turbo: false }, class: 'header-name' %></li>
+    <li><%= link_to current_user.name, edit_user_path(current_user), class: 'header-name' %></li>
     <li><%= link_to 'ログアウト', destroy_user_session_path, class: 'header-logout', data: { turbo_method: :delete } %></li>
-    <li><%= link_to 'おすすめアプリ投稿', new_app_path,data: { turbo: false }, class: 'main-post' %></li>
-    <li><%= link_to '投稿一覧', apps_path,data: { turbo: false }, class: 'main-posts' %></li>
-    <li><%= link_to '検索', search_apps_path,data: { turbo: false }, class: 'main-search' %></li>
-    <%= search_form_for @q, url:search_apps_path , data: { turbo: false },html: {id: "detailed-search-form"} do |f| %>
+    <li><%= link_to 'おすすめアプリ投稿', new_app_path, class: 'main-post' %></li>
+    <li><%= link_to '投稿一覧', apps_path, class: 'main-posts' %></li>
+    <li><%= link_to '検索', search_apps_path, class: 'main-search' %></li>
+    <%= search_form_for @q, url:search_apps_path,html: {id: "detailed-search-form"} do |f| %>
     <div class='header-search'>
     <%# <div class="search-field"> %>
     <%# <div class='search-app-name'> %>
@@ -30,8 +30,8 @@
     </div>
   <% end %>
     <% else %>
-    <li><%= link_to 'ログイン', new_user_session_path,data: { turbo: false }, class: 'header-login' %></li>
-    <li><%= link_to '新規登録', new_user_registration_path,data: { turbo: false }, class: 'header-signup' %></li>
+    <li><%= link_to 'ログイン', new_user_session_path, class: 'header-login' %></li>
+    <li><%= link_to '新規登録', new_user_registration_path, class: 'header-signup' %></li>
     <% end %>
   </ul>
 
