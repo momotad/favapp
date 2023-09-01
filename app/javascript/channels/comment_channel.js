@@ -1,7 +1,6 @@
 import consumer from "./consumer"
 
-// const comment = () => {
-if(location.pathname.match(/\/list\/\d/)){
+if(location.pathname.match(/\/apps\/\d/)){
   consumer.subscriptions.create({
     channel: "CommentChannel",
     app_id: location.pathname.match(/\d+/)[0]
@@ -28,6 +27,3 @@ if(location.pathname.match(/\/list\/\d/)){
   }
 })
 }
-// };
-
-// window.addEventListener("turbo:load", comment);

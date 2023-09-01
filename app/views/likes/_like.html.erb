@@ -1,5 +1,5 @@
-    <% if user_signed_in? && app.liked_by?(current_user)%>
-      <%=link_to "💗", app_like_path(app.id), data: { turbo_method: :delete }, class: "app_likes float", remote: true %>
+    <% if app.liked_by?(current_user)%>
+      <%=link_to "💗", app_likes_path(app.id), data: { turbo_method: :delete }, class: "app_likes float", remote: true %>
       <%= app.likes.count %>
     <% else %>
       <%=link_to "🤍", app_likes_path(app.id), data: { turbo_method: :post }, class: "app_likes float", remote: true %>
