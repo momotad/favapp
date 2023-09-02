@@ -11,7 +11,7 @@
 
 .post-box {
   background-color: black;
-  padding: 5vh 15vw;
+  padding: 20px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,7 +27,6 @@
 
 .post-box-img {
   height: 50vh;
-  /* width: 60vw; */
   min-height: 500px;
   background-color: black;
   object-fit: contain;
