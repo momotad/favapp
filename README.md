@@ -64,8 +64,14 @@ https://favapp.onrender.com/
 https://docs.google.com/spreadsheets/d/1L677pgABIyWOUPuCiYRJwLVfDAAAtKkaneg-77arrac/edit?usp=sharing
 
 ## 実装した機能についての画像およびその説明
+#### 自作ロゴ（Canva）
+
+
 #### 新規ユーザー登録画面
 [![Image from Gyazo](https://i.gyazo.com/06e501f76a1299cf9324512ff5f9fba3.png)](https://gyazo.com/06e501f76a1299cf9324512ff5f9fba3)
+
+#### ユーザー情報編集画面
+
 
 #### ログイン画面
 [![Image from Gyazo](https://i.gyazo.com/d568efd9811880e38295251783e3a414.png)](https://gyazo.com/d568efd9811880e38295251783e3a414)
@@ -79,8 +85,18 @@ https://docs.google.com/spreadsheets/d/1L677pgABIyWOUPuCiYRJwLVfDAAAtKkaneg-77ar
 #### おすすめアプリ詳細画面
 
 
-## 実装予定の機能
+#### おすすめアプリ編集画面
 
+
+#### いいね機能
+
+
+#### コメント機能
+
+
+## 実装予定の機能
+- いいね機能、コメント機能の非同期化
+- Googleアカウントログイン機能
 
 ## データベース設計
 [![Image from Gyazo](https://i.gyazo.com/34dfcb20fd0be51f2168124b29fb6837.png)](https://gyazo.com/34dfcb20fd0be51f2168124b29fb6837)
@@ -101,8 +117,9 @@ https://docs.google.com/spreadsheets/d/1L677pgABIyWOUPuCiYRJwLVfDAAAtKkaneg-77ar
 
 
 ## 工夫したポイント
-- サイトの見た目作りです。第一印象で見にくいと感じないよう、余白に気をつけて制作しました（書籍「けっきょく、よはく」参考）
-- 任意のアクションを追加したことです。テックキャンプではrailsに定義されている7つのアクションのみ使用しておりました。ネットで検索し自力で実装しました。
+- 
+- カリキュラムで学んだ機能を実装し、復習も実施した事です。
+- サイトの見た目作りです。第一印象で「見づらい」と感じないよう、余白に気をつけて制作しました（書籍「けっきょく、よはく」参考）
 
 <br>
 
