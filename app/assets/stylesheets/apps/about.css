@@ -52,6 +52,7 @@
   cursor: pointer;
 }
 
+/* TOP画面文字アニメーション */
 @keyframes fade{
 0%{
   opacity: 0;
