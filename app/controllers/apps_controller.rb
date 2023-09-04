@@ -17,7 +17,7 @@ class AppsController < ApplicationController
     @app = App.new(app_params)
     if @app.valid?
       @app.save
-      redirect_to list_apps_path
+      redirect_to '/'
     else
       render :new, status: :unprocessable_entity
     end
@@ -48,7 +48,7 @@ class AppsController < ApplicationController
     return unless user_signed_in? && current_user.id == @app.user.id
 
     @app.destroy
-    redirect_to app_path(@app.id)
+    redirect_to '/'
   end
 
   def search
