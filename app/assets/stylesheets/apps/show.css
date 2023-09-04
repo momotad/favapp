@@ -104,6 +104,10 @@
   height: 5vh;
 }
 
+.app_likes {
+  text-decoration: none;
+}
+
 .comment-btn {
   display: flex;
 }
