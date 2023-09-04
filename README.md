@@ -65,7 +65,7 @@ https://docs.google.com/spreadsheets/d/1L677pgABIyWOUPuCiYRJwLVfDAAAtKkaneg-77ar
 
 ## 実装した機能についての画像およびその説明
 #### 自作ロゴ（Canva）
-
+[![Image from Gyazo](https://i.gyazo.com/f667ded770cbc5b6c2141d2abdce8636.png)](https://gyazo.com/f667ded770cbc5b6c2141d2abdce8636)
 
 #### 新規ユーザー登録画面
 [![Image from Gyazo](https://i.gyazo.com/06e501f76a1299cf9324512ff5f9fba3.png)](https://gyazo.com/06e501f76a1299cf9324512ff5f9fba3)
