@@ -80,7 +80,7 @@ https://docs.google.com/spreadsheets/d/1L677pgABIyWOUPuCiYRJwLVfDAAAtKkaneg-77ar
 [![Image from Gyazo](https://i.gyazo.com/1993523c1bc7b2064e2d7484174d0dfd.png)](https://gyazo.com/1993523c1bc7b2064e2d7484174d0dfd)
 
 #### おすすめアプリ投稿一覧画面
-
+[![Image from Gyazo](https://i.gyazo.com/3edc8f211f6d9361a3085625a4078ea1.jpg)](https://gyazo.com/3edc8f211f6d9361a3085625a4078ea1)
 
 #### おすすめアプリ詳細画面
 [![Image from Gyazo](https://i.gyazo.com/22c75d50d173703bb34ec23ded7c26b9.gif)](https://gyazo.com/22c75d50d173703bb34ec23ded7c26b9)
@@ -93,6 +93,9 @@ https://docs.google.com/spreadsheets/d/1L677pgABIyWOUPuCiYRJwLVfDAAAtKkaneg-77ar
 
 #### コメント機能
 [![Image from Gyazo](https://i.gyazo.com/4f622ae6b8997e90e36f16088839a119.gif)](https://gyazo.com/4f622ae6b8997e90e36f16088839a119)
+
+#### ジャンル検索機能
+[![Image from Gyazo](https://i.gyazo.com/500d2faff48a5a73e21d8aebcfa0ba4e.gif)](https://gyazo.com/500d2faff48a5a73e21d8aebcfa0ba4e)
 
 ## 実装予定の機能
 - いいね機能の非同期化
@@ -121,11 +124,16 @@ https://docs.google.com/spreadsheets/d/1L677pgABIyWOUPuCiYRJwLVfDAAAtKkaneg-77ar
 
 ## 工夫したポイント
 - 
-- カリキュラムで学んだ機能を実装し、実装しながら復習を試みた事です。
+- カリキュラムで学んだ機能（ユーザー管理、投稿関係やいいね、コメント機能等）を実装し、実装しながら復習を試みた事です。
 - サイトの見た目作りです。余白を設けて窮屈な見た目にならないように制作しました。（書籍「けっきょく、よはく」参考）
 
 ## 改善点
-- 
+- サイトの横幅調整が必要（横スクロールバーが表示されているページがある）
+- 投稿数によってビューが崩れる箇所（投稿一覧画面）
+- CSSコードにコメントアウトを記述し、どの部分のコーディングかわかりやすくする
+
+## オリジナルアプリ制作から1番学んだこと
+- ローカルでは正常だが、本番環境では動作しない事象があり、両方の環境で動作確認することの重要さを学ぶことができました。
 
 ## 制作時間
 50時間
