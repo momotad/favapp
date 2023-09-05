@@ -71,7 +71,7 @@ https://docs.google.com/spreadsheets/d/1L677pgABIyWOUPuCiYRJwLVfDAAAtKkaneg-77ar
 [![Image from Gyazo](https://i.gyazo.com/06e501f76a1299cf9324512ff5f9fba3.png)](https://gyazo.com/06e501f76a1299cf9324512ff5f9fba3)
 
 #### ユーザー情報編集画面
-
+[![Image from Gyazo](https://i.gyazo.com/c34203f7fdec11cca60235d50d8c48a8.png)](https://gyazo.com/c34203f7fdec11cca60235d50d8c48a8)
 
 #### ログイン画面
 [![Image from Gyazo](https://i.gyazo.com/d568efd9811880e38295251783e3a414.png)](https://gyazo.com/d568efd9811880e38295251783e3a414)
@@ -83,19 +83,19 @@ https://docs.google.com/spreadsheets/d/1L677pgABIyWOUPuCiYRJwLVfDAAAtKkaneg-77ar
 
 
 #### おすすめアプリ詳細画面
-
+[![Image from Gyazo](https://i.gyazo.com/22c75d50d173703bb34ec23ded7c26b9.gif)](https://gyazo.com/22c75d50d173703bb34ec23ded7c26b9)
 
 #### おすすめアプリ編集画面
-
+[![Image from Gyazo](https://i.gyazo.com/0aa3afbdd513f894e5ea4f86a2ced01e.png)](https://gyazo.com/0aa3afbdd513f894e5ea4f86a2ced01e)
 
 #### いいね機能
 
 
 #### コメント機能
-
+[![Image from Gyazo](https://i.gyazo.com/4f622ae6b8997e90e36f16088839a119.gif)](https://gyazo.com/4f622ae6b8997e90e36f16088839a119)
 
 ## 実装予定の機能
-- いいね機能、コメント機能の非同期化
+- いいね機能の非同期化
 - Googleアカウントログイン機能
 
 ## データベース設計
