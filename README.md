@@ -114,12 +114,22 @@ https://docs.google.com/spreadsheets/d/1L677pgABIyWOUPuCiYRJwLVfDAAAtKkaneg-77ar
 - VScode
 
 ## ローカルでの動作方法
-
+% git clone https://github.com/momotad/favapp.git
+% cd favapp
+% bundle install
+% yarn install
 
 ## 工夫したポイント
 - 
-- カリキュラムで学んだ機能を実装し、復習も実施した事です。
-- サイトの見た目作りです。第一印象で「見づらい」と感じないよう、余白に気をつけて制作しました（書籍「けっきょく、よはく」参考）
+- カリキュラムで学んだ機能を実装し、実装しながら復習を試みた事です。
+- サイトの見た目作りです。余白を設けて窮屈な見た目にならないように制作しました。（書籍「けっきょく、よはく」参考）
+
+## 改善点
+- 
+
+## 制作時間
+50時間
+
 
 <br>
 
