@@ -16,20 +16,6 @@
    height: 100%;
 }
 
-.posts-contents>.title {
-  font-size: 3.5vh;
-  line-height: 1.4;
-  font-weight: bold;
-}
-
-.posts-contents>.subtitle {
-  font-size: 3vh;
-  margin: 1vh 0;
-  text-decoration: none;
-  color: #3ccace;
-  font-weight: bold;
-}
-
 .posts-lists {
   width: 100vw;
   display: flex;
@@ -52,11 +38,12 @@
 
 .post-img-content {
   position: relative;
+  
 }
 
 .post-img {
-  width: 100%;
-  height: 100%;
+  width: 33vw;
+  height: 33vh;
 }
 
 .post-info {
