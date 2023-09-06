@@ -89,7 +89,7 @@ https://docs.google.com/spreadsheets/d/1L677pgABIyWOUPuCiYRJwLVfDAAAtKkaneg-77ar
 [![Image from Gyazo](https://i.gyazo.com/0aa3afbdd513f894e5ea4f86a2ced01e.png)](https://gyazo.com/0aa3afbdd513f894e5ea4f86a2ced01e)
 
 #### いいね機能
-
+[![Image from Gyazo](https://i.gyazo.com/68f3603d680b1c845814cf7eea670b40.gif)](https://gyazo.com/68f3603d680b1c845814cf7eea670b40)
 
 #### コメント機能
 [![Image from Gyazo](https://i.gyazo.com/4f622ae6b8997e90e36f16088839a119.gif)](https://gyazo.com/4f622ae6b8997e90e36f16088839a119)
@@ -117,13 +117,12 @@ https://docs.google.com/spreadsheets/d/1L677pgABIyWOUPuCiYRJwLVfDAAAtKkaneg-77ar
 - VScode
 
 ## ローカルでの動作方法
-% git clone https://github.com/momotad/favapp.git
-% cd favapp
-% bundle install
-% yarn install
+% git clone https://github.com/momotad/favapp.git  
+% cd favapp  
+% bundle install  
+% yarn install  
 
 ## 工夫したポイント
-- 
 - カリキュラムで学んだ機能（ユーザー管理、投稿関係やいいね、コメント機能等）を実装し、実装しながら復習を試みた事です。
 - サイトの見た目作りです。余白を設けて窮屈な見た目にならないように制作しました。（書籍「けっきょく、よはく」参考）
 
@@ -131,6 +130,7 @@ https://docs.google.com/spreadsheets/d/1L677pgABIyWOUPuCiYRJwLVfDAAAtKkaneg-77ar
 - サイトの横幅調整が必要（横スクロールバーが表示されているページがある）
 - 投稿数によってビューが崩れる箇所（投稿一覧画面）
 - CSSコードにコメントアウトを記述し、どの部分のコーディングかわかりやすくする
+- いいねを押した後、自分でページ更新しないと反映されない
 
 ## オリジナルアプリ制作から1番学んだこと
 - ローカルでは正常だが、本番環境では動作しない事象があり、両方の環境で動作確認することの重要さを学ぶことができました。
