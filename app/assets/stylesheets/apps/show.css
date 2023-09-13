@@ -1,5 +1,4 @@
-/* 概要 */
-
+/* おすすめアプリ投稿詳細画面 */
 .post-show {
   background-color: black;
   width: 100vw;
@@ -25,17 +24,20 @@
   padding-bottom: 5px;
 }
 
+/* 投稿写真 */
 .post-box-img {
   height: 50vh;
   min-height: 500px;
   background-color: black;
   object-fit: contain;
 }
+/* 投稿写真 */
 
 .show-btn {
   display: flex;
 }
 
+/* 編集ボタン */
 .edit-post-btn {
   color: black;
   padding: 10px 50px;
@@ -46,7 +48,9 @@
   border-radius: 100vh;
   margin-right: 100px;
 }
+/* 編集ボタン */
 
+/* 削除ボタン */
 .post-destroy {
   color: black;
   padding: 10px 50px;
@@ -56,6 +60,7 @@
   cursor: pointer;
   border-radius: 100vh;
 }
+/* 削除ボタン */
 
 .post-explain-box {
   font-size: 18px;
@@ -91,6 +96,7 @@
   position: relative;
 }
 
+/* いいねボタン */
 .favorite-btn {
   border-radius: 40px;
   width: 5vw;
@@ -107,7 +113,9 @@
 .app_likes {
   text-decoration: none;
 }
+/* いいねボタン */
 
+/* コメント */
 .comment-btn {
   display: flex;
 }
@@ -151,3 +159,5 @@
 h4 {
   color: white;
 }
+/* コメント */
+/* おすすめアプリ投稿詳細画面 */

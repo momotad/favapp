@@ -42,6 +42,7 @@
   justify-content: center;
 }
 
+/* メイン画面「新規登録」ボタン */
 .main-sign-btn {
   text-decoration: none;
   color: black;
@@ -51,6 +52,7 @@
   border-radius: 100vh;
   cursor: pointer;
 }
+/* メイン画面「新規登録」ボタン */
 
 /* TOP画面文字アニメーション */
 @keyframes fade{
@@ -61,3 +63,4 @@
   opacity: 1;
 }
 }
+/* TOP画面文字アニメーション */

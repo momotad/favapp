@@ -11,10 +11,12 @@
   width: 100vw;
 }
 
+/* 背景透過 */
 .toumei {
    background-color: rgba(255, 255, 255,0.1);
    height: 100%;
 }
+/* 背景透過 */
 
 .posts-lists {
   width: 100vw;
@@ -28,9 +30,11 @@
   padding: 1vw;
 }
 
+/* 投稿選択時に白ライン */
 .sen:hover{
   border: 1px white solid;
 }
+/* 投稿選択時に白ライン */
 
 .list-link {
   text-decoration: none;
@@ -60,7 +64,7 @@
   font-size: 2.5vh;
 }
 
-
+/* いいねボタン */
 .star-btn {
   display: flex;
   align-items: center;
@@ -71,6 +75,7 @@
   width: 2vh;
   margin-right: 0.5vw;
 }
+/* いいねボタン */
 
 .star-count {
   font-size: 2vh;
